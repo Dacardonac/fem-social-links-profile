@@ -8,22 +8,22 @@
 
   &__image {
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 4.375rem;
+    height: 4.375rem;
   }
   &__username {
     margin: 1rem 1rem 0 1rem;
-    font-size: 19px;
+    font-size: 1.188rem;
   }
   &__location {
-    font-size: 11.2px;
+    font-size: 0.7rem;
     color: var(--green);
     margin: 8px 1rem 1rem 1rem;
   }
 
   &__bio {
-    font-size: 11.2px;
-    margin: 23px 0;
+    font-size: 0.7rem;
+    margin: 1.438rem 0;
   }
 
   &__links {
@@ -34,11 +34,15 @@
   }
   &__link {
     text-decoration: none;
-    font-size: 11px;
+    font-size: 0.688rem;
     font-weight: bold;
     border-radius: 5px;
-    padding: 11px;
+    padding: 0.688rem;
     background-color: var(--grey-700);
     color: var(--white);
 }
+  &__link:hover {
+    background-color: var(--green);
+    color: var(--grey-900);
+  }
 }
