@@ -1,41 +1,46 @@
 .card {
-  width: 265px;
+  width: 15rem;
   background-color: var(--grey-800);
   color: var(--white);
   text-align: center;
   padding: 1rem 0;
   border-radius: 10px;
+  user-select: none;
 
   &__image {
     border-radius: 50%;
     width: 4.375rem;
-    height: 4.375rem;
+    height: auto;
+    cursor: pointer;
   }
   &__username {
     margin: 1rem 1rem 0 1rem;
-    font-size: 1.188rem;
+    font-size: 1.063rem;
+    user-select: text;
   }
   &__location {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     color: var(--green);
-    margin: 8px 1rem 1rem 1rem;
+    margin: 0.5rem 1rem 1rem 1rem;
+    user-select: text;
   }
 
   &__bio {
-    font-size: 0.7rem;
-    margin: 1.438rem 0;
+    font-size: 0.6rem;
+    margin: 1.4rem 0;
+    user-select: text;
   }
 
   &__links {
     display: flex;
     flex-direction: column;
-    gap: 13px;
-    margin: 1rem 1rem 0 1rem;
-    padding: 0 18px 0 20px;
+    gap: 0.625rem;
+    padding: 0 1.125rem 0 1.125rem;
+    user-select: text;
   }
   &__link {
     text-decoration: none;
-    font-size: 0.688rem;
+    font-size: 0.645rem;
     font-weight: bold;
     border-radius: 5px;
     padding: 0.688rem;
@@ -50,7 +55,26 @@
 
 @media (min-width: 1440px) {
   .card {
-    width: 310px;
-    padding: 2rem 0;
+    width: 19.375rem;
+    padding: 2rem 1rem 2rem 1rem;
+
+    &__username {
+      margin: 1.25rem 1rem 0 1rem;
+      font-size: 18.7px;
+    }
+    &__location {
+      font-size: 0.70rem;
+    }
+    &__bio {
+      font-size: 0.70rem;
+    }
+
+    &__links {
+      gap: 0.813rem;
+    }
+
+    &__link {
+      font-size: 0.700rem;
+    }
   }
 }
