@@ -1,5 +1,5 @@
 .card {
-  width: 262px;
+  width: 265px;
   background-color: var(--grey-800);
   color: var(--white);
   text-align: center;
@@ -29,8 +29,9 @@
   &__links {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 13px;
     margin: 1rem 1rem 0 1rem;
+    padding: 0 18px 0 20px;
   }
   &__link {
     text-decoration: none;
@@ -44,5 +45,12 @@
   &__link:hover {
     background-color: var(--green);
     color: var(--grey-900);
+  }
+}
+
+@media (min-width: 1440px) {
+  .card {
+    width: 310px;
+    padding: 2rem 0;
   }
 }
