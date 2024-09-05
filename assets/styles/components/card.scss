@@ -1,0 +1,44 @@
+.card {
+  width: 262px;
+  background-color: var(--grey-800);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 10px;
+
+  &__image {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+  }
+  &__username {
+    margin: 1rem 1rem 0 1rem;
+    font-size: 19px;
+  }
+  &__location {
+    font-size: 11.2px;
+    color: var(--green);
+    margin: 8px 1rem 1rem 1rem;
+  }
+
+  &__bio {
+    font-size: 11.2px;
+    margin: 23px 0;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 1rem 0 1rem;
+  }
+  &__link {
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 11px;
+    background-color: var(--grey-700);
+    color: var(--white);
+}
+}
